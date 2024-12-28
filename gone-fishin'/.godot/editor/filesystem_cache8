@@ -1,3 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1726764246
+::res://::1735424542
 icon.svg::CompressedTexture2D::2792256072007146577::1726764208::1726764247::1::::<><>::
+::res://Assets/::1735424542
+GroundPlaceholder.png::CompressedTexture2D::3837899075654750742::1735423806::1735423945::1::::<><>::
+Logo.png::CompressedTexture2D::4970927935788589326::1735423868::1735423945::1::::<><>::
+Player1Animation_transparent.png::CompressedTexture2D::6269854607497354072::1709572389::1735424542::1::::<><>::
+playerstatic.png::CompressedTexture2D::1228961246936504258::1709572389::1735424330::1::::<><>::
+::res://Scenes/::1735424542
+test_level.tscn::PackedScene::9131261701434451705::1735424158::0::1::::<><>::

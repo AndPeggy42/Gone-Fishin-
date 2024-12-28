@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://cldiecr47nh2i"]
+
+[ext_resource type="Script" path="res://Scenes/placeholder_player.gd" id="1_tj1xy"]
+[ext_resource type="Texture2D" uid="uid://cvlfubj0kbffs" path="res://Assets/Player1Animation_transparent.png" id="1_tqym0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ustp"]
+size = Vector2(9, 11)
+
+[sub_resource type="Animation" id="Animation_qnxrw"]
+resource_name = "walk_right"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cyavj"]
+_data = {
+"walk_right": SubResource("Animation_qnxrw")
+}
+
+[node name="placeholderPlayer" type="CharacterBody2D"]
+script = ExtResource("1_tj1xy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_tqym0")
+hframes = 11
+vframes = 2
+frame = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 2.5)
+shape = SubResource("RectangleShape2D_8ustp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_cyavj")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
